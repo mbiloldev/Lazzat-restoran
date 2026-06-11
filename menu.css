@@ -1,1 +1,111 @@
-efgbnhgrb
+/* ===== Category Tabs ===== */
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.tab:hover {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.tab.active {
+  background: #c0392b;
+  color: #fff;
+  border-color: #c0392b;
+}
+
+/* ===== Menu Grid ===== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding-bottom: 48px;
+}
+
+/* ===== Menu Card ===== */
+.menu-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.menu-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.menu-card-emoji {
+  font-size: 64px;
+  text-align: center;
+  padding: 28px 0 16px;
+  background: #fdf5f5;
+  display: block;
+}
+
+.menu-card-body {
+  padding: 16px;
+}
+
+.menu-card-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.menu-card-desc {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.menu-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-card-price {
+  font-size: 17px;
+  font-weight: 700;
+  color: #c0392b;
+}
+
+.add-to-cart {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.add-to-cart:hover {
+  background: #a93226;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+}
