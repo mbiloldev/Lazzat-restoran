@@ -1,4 +1,22 @@
+// ===== Place order =====
+document.getElementById("place-order")?.addEventListener("click", () => {
+  const name    = document.getElementById("name").value.trim();
+  const phone   = document.getElementById("phone").value.trim();
+  const address = document.getElementById("address").value.trim();
 
+  if (!name || !phone || !address) {
+    alert("Iltimos, barcha majburiy maydonlarni to'ldiring.");
+    return;
+  }
+
+  const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+  if (cart.length === 0) {
+    alert("Savat bo'sh! Avval taom tanlang.");
+    return;
+  }
+
+  // Save order
+  const order = {
     id:      Date.now(),
     name,
     phone,
