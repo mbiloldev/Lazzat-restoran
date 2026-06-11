@@ -6,6 +6,10 @@ const menuItems = [
   { id: 4, name: "Shurva",        emoji: "🍲", price: 22000, category: "soup",  desc: "Qo'zi go'shtli boy sho'rva" },
   { id: 5, name: "Mastava",       emoji: "🥣", price: 20000, category: "soup",  desc: "Guruchli sabzavotli mastava" },
   { id: 6, name: "Somsa",         emoji: "🥐", price: 8000,  category: "main",  desc: "Tandirda pishirilgan go'shtli somsa" },
+  { id: 7, name: "Ko'k choy",     emoji: "🍵", price: 5000,  category: "drink", desc: "Issiq o'zbek ko'k choy" },
+  { id: 8, name: "Limonad",       emoji: "🍋", price: 12000, category: "drink", desc: "Yangi limon bilan tabiiy limonad" },
+  { id: 9, name: "Kompot",        emoji: "🍹", price: 10000, category: "drink", desc: "Mevali uy kompoti" },
+];
 
 // ===== Format price =====
 function formatPrice(price) {
