@@ -1,1 +1,65 @@
-cdwqvfvb
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buyurtma — Lazzat Restoran</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">🍽️ Lazzat</div>
+      <nav class="nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="menu.html">Menyu</a>
+        <a href="cart.html">Savat 🛒</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="order-form-wrapper">
+        <h2 class="page-title">Buyurtmani rasmiylashtirish</h2>
+
+        <div class="order-form">
+          <div class="form-group">
+            <label for="name">Ismingiz</label>
+            <input type="text" id="name" placeholder="Ism familiya" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon raqam</label>
+            <input type="tel" id="phone" placeholder="+998 90 000 00 00" />
+          </div>
+          <div class="form-group">
+            <label for="address">Manzil</label>
+            <input type="text" id="address" placeholder="Ko'cha, uy raqami" />
+          </div>
+          <div class="form-group">
+            <label for="note">Izoh (ixtiyoriy)</label>
+            <textarea id="note" placeholder="Qo'shimcha xohishlar..."></textarea>
+          </div>
+          <button class="btn-primary" id="place-order">Buyurtmani tasdiqlash</button>
+        </div>
+
+        <div class="order-success hidden" id="order-success">
+          <span class="success-icon">✅</span>
+          <h3>Buyurtma qabul qilindi!</h3>
+          <p>Tez orada siz bilan bog'lanamiz.</p>
+          <a href="index.html" class="btn-secondary">Bosh sahifaga qaytish</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Lazzat Restoran</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="order.js"></script>
+</body>
+</html>
