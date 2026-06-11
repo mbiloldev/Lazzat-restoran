@@ -1,12 +1,4 @@
-// ===== Place order =====
-document.getElementById("place-order")?.addEventListener("click", () => {
-  const name    = document.getElementById("name").value.trim();
-  
-    return;
-  }
 
-  // Save order
-  const order = {
     id:      Date.now(),
     name,
     phone,
