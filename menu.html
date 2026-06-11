@@ -1,1 +1,48 @@
-defrgewhry
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menyu — Lazzat Restoran</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">🍽️ Lazzat</div>
+      <nav class="nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="menu.html" class="active">Menyu</a>
+        <a href="cart.html">Savat 🛒 <span id="cart-count" class="cart-badge">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 class="page-title">Bizning menyu</h2>
+
+      <div class="category-tabs">
+        <button class="tab active" data-category="all">Hammasi</button>
+        <button class="tab" data-category="soup">Sho'rvalar</button>
+        <button class="tab" data-category="main">Asosiy taomlar</button>
+        <button class="tab" data-category="drink">Ichimliklar</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- JS tomonidan to'ldiriladi -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Lazzat Restoran</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
